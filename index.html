@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Tasks</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div><h1>My Daily Tasks</h1><p>Keep track of your everyday tasks.</p></div>
+      <div class="header-tools"><button type="button" id="themeToggle" class="theme-toggle" aria-pressed="false">🌙 Dark mode</button><div class="count" id="taskCount">0 active · 0 completed</div></div>
+    </header>
+
+    <section class="panel" aria-label="Add a task">
+      <h2>Add a task</h2>
+      <form id="taskForm">
+        <div class="form-grid">
+          <label>Task title <input id="title" maxlength="80" placeholder="e.g. Buy groceries" required></label>
+          <label>Category <select id="category"><option>Personal</option><option>Study</option><option>Work</option><option>Assignments</option></select></label>
+          <label>Priority <select id="priority"><option>Low</option><option selected>Medium</option><option>High</option></select></label>
+        </div>
+        <label>Description <textarea id="description" rows="2" maxlength="300" placeholder="A few details (optional)"></textarea></label>
+        <button type="submit">+ Add task</button>
+      </form>
+    </section>
+
+    <section class="filters" aria-label="Search and filter tasks">
+      <input type="search" id="search" placeholder="Search tasks by title..." aria-label="Search tasks by title">
+      <select id="filterCategory" aria-label="Filter by category"><option value="All">All categories</option><option>Personal</option><option>Study</option><option>Work</option><option>Assignments</option></select>
+    </section>
+
+    <p class="drag-hint">Tip: drag a task to another column, or use its status menu.</p>
+    <section class="board" aria-label="Task board">
+      <div class="column"><h2>To Do <span id="todoCount">0</span></h2><div class="task-list" id="todo"></div></div>
+      <div class="column"><h2>In Progress  <span id="progressCount">0</span></h2><div class="task-list" id="progress"></div></div>
+      <div class="column"><h2>Completed <span id="doneCount">0</span></h2><div class="task-list" id="done"></div></div>
+    </section>
+    <footer>A simple daily planner 🐾</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
