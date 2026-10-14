@@ -5,8 +5,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    color: #303b3a;
-    background: #f5f7f4;
+    color: #420e18;
+    background: #e8f4e2;
 }
 
 .container {
@@ -31,11 +31,11 @@ h1 {
 
 header p {
     margin: 8px 0 0;
-    color: #64716d;
+    color: #fbfffe;
 }
 
 .count {
-    background: #e1ece5;
+    background: #f8fdfa;
     padding: 12px 16px;
     border-radius: 20px;
     font-size: 14px;
@@ -43,7 +43,7 @@ header p {
 
 .panel,
 .column {
-    background: white;
+    background-color: #f2f1f1;
     border: 1px solid #dbe4dd;
     border-radius: 14px;
     padding: 20px;
@@ -86,7 +86,7 @@ textarea {
 
 button {
     border: 0;
-    background: #4d7969;
+    background: #420e18;
     color: white;
     padding: 11px 17px;
     border-radius: 8px;
@@ -119,7 +119,7 @@ button:hover {
 }
 
 .column {
-    background: #eaf1ec;
+    background: #f2f1f1;
     min-height: 230px;
 }
 
@@ -131,7 +131,7 @@ button:hover {
 }
 
 .column h2 span {
-    color: #496f63;
+    color: #7ea297;
 }
 
 .task-list {
@@ -191,7 +191,7 @@ button:hover {
 
 .actions button {
     background: #e3ede6;
-    color: #365e50;
+    color: #420e18;
     padding: 9px;
     font-size: 12px;
 }
@@ -244,7 +244,7 @@ footer {
 
 .theme-toggle {
     background: #e1ece5;
-    color: #365e50;
+    color: #420e18;
 }
 
 .theme-toggle:hover {
@@ -270,7 +270,7 @@ footer {
 }
 
 .task-list.drop-target {
-    outline: 2px dashed #4d7969;
+    outline: 2px dashed #420e18;
     outline-offset: 3px;
     border-radius: 8px;
     background: #dcebe1;
@@ -283,7 +283,7 @@ body.dark {
 
 .dark h1,
 .dark .column h2 span {
-    color: #a5d5b9;
+    color: #fbecd8;
 }
 
 .dark header p,
@@ -324,12 +324,12 @@ body.dark {
 }
 
 .dark .actions button {
-    background: #3b5547;
+    background: #420e18;
     color: #e6eee8;
 }
 
 .dark .task-list.drop-target {
-    background: #344a3c;
+    background: #420e18;
     outline-color: #a5d5b9;
 }
 
